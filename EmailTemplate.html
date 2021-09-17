@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body style="background-color: #CCFFFF; width: 100%; display: flex; justify-content: center; align-items: center; padding: 100px 200px;">
+    <div style="width: 70%;">
+        <h1>Hello {0} </h1>
+        <h2>Thank you for your recent purchase on PNWX</h2>
+        <p>The following is the receipt of the transaction</p>
+        <table style="border-collapse: collapse;">
+            <tr style="border-bottom: 2px solid grey;">
+                <th style="padding: 0px 15px;">Purchase Time</th>
+                <th style="padding: 0px 15px;">Product</th>
+                <th style="padding: 0px 15px;">Unit Price (RM)</th>
+                <th style="padding: 0px 15px;">Quantity</th>
+                <th style="padding: 0px 15px;">Subtotal (RM)</th>
+            </tr>
+            {1}
+            <tr style="border-bottom: 1px solid grey; border-top: 1px solid grey;">
+                <td colspan="4" style="padding: 0px 15px;">Total Price (RM)</td>
+                <td style="padding: 0px 15px; text-align:right">{2:n}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
